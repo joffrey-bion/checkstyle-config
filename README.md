@@ -19,7 +19,7 @@ configurations {
 }
 
 dependencies {
-    checkstyleConfig "org.hildan.checkstyle:checkstyle-config:1.0.0"
+    checkstyleConfig "org.hildan.checkstyle:checkstyle-config:1.1.0"
 }
 
 checkstyle { // affects all Checkstyle tasks
