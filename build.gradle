@@ -6,7 +6,7 @@ apply plugin: 'java'
 apply plugin: 'maven-publish'
 
 group = 'org.hildan.checkstyle'
-version = '1.0.0'
+version = '1.1.0'
 description = 'A checkstyle configuration shared by multiple projects'
 ext.labels = ['checkstyle', 'codestyle', 'coding', 'style', 'configuration', 'config']
 ext.licenses = ['MIT']
@@ -46,8 +46,6 @@ def pomConfig = {
         }
     }
 }
-
-apply from: 'gradle/scripts/release.gradle'
 
 task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
@@ -107,4 +105,6 @@ bintray {
     }
 }
 bintrayUpload.dependsOn(build)
+
+apply from: 'gradle/scripts/release.gradle'
 release.dependsOn(bintrayUpload)
