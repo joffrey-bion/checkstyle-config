@@ -111,4 +111,11 @@
             <property name="ignoreMethodNamesRegex" value=".*Property"/>
         </module>
     </module>
+
+    <!-- Unmaintainable Javadoc tags -->
+    <module name="RegexpSingleline">
+        <property name="format" value="@author" />
+        <property name="ignoreCase" value="true" />
+        <property name="message" value="unmaintainable Javadoc tag @author, please rely on version control" />
+    </module>
 </module>
