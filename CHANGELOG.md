@@ -1,5 +1,19 @@
 # Change Log
 
+## [v2.0.0](https://bintray.com/joffrey-bion/maven/checkstyle-config/2.0.0) (2017-09-26)
+[Full Changelog](https://github.com/joffrey-bion/checkstyle-config/compare/v1.1.0...v2.0.0)
+
+**Implemented enhancements:**
+
+- Forbid @author Javadoc tag [\#2](https://github.com/joffrey-bion/checkstyle-config/issues/2)
+
+## [v1.1.0](https://bintray.com/joffrey-bion/maven/checkstyle-config/1.1.0) (2017-09-25)
+[Full Changelog](https://github.com/joffrey-bion/checkstyle-config/compare/v1.0.0...v1.1.0)
+
+**Implemented enhancements:**
+
+- Push line wrapping indentation to 8 spaces [\#1](https://github.com/joffrey-bion/checkstyle-config/issues/1)
+
 ## [v1.0.0](https://bintray.com/joffrey-bion/maven/checkstyle-config/1.0.0) (2017-09-25)
 
 
