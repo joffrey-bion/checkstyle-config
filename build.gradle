@@ -7,6 +7,7 @@ apply plugin: 'maven-publish'
 
 group = 'org.hildan.checkstyle'
 version = '1.0.0'
+description = 'A checkstyle configuration shared by multiple projects'
 ext.labels = ['checkstyle', 'codestyle', 'coding', 'style', 'configuration', 'config']
 ext.licenses = ['MIT']
 
