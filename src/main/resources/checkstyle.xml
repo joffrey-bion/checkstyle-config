@@ -177,7 +177,13 @@
             <property name="ignoreMethodNamesRegex" value=".*Property"/>
         </module>
         <module name="NonEmptyAtclauseDescription"/>
+
+        <!-- To enable the suppress warning filter -->
+        <module name="SuppressWarningsHolder" />
     </module>
+
+    <!-- Enables SuppressWarning annotations in exceptional cases -->
+    <module name="SuppressWarningsFilter" />
 
     <!-- Unmaintainable Javadoc tags -->
     <module name="RegexpSingleline">
