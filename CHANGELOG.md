@@ -1,5 +1,12 @@
 # Change Log
 
+## [v2.2.0](https://bintray.com/joffrey-bion/maven/checkstyle-config/2.2.0) (2018-01-25)
+[Full Changelog](https://github.com/joffrey-bion/checkstyle-config/compare/v2.1.0...v2.2.0)
+
+**Implemented enhancements:**
+
+- Enable SuppressWarning filter [\#5](https://github.com/joffrey-bion/checkstyle-config/issues/5)
+
 ## [v2.1.0](https://bintray.com/joffrey-bion/maven/checkstyle-config/2.1.0) (2017-09-26)
 [Full Changelog](https://github.com/joffrey-bion/checkstyle-config/compare/v2.0.0...v2.1.0)
 
