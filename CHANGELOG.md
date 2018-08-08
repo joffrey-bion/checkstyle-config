@@ -1,5 +1,12 @@
 # Change Log
 
+## [v2.3.0](https://bintray.com/joffrey-bion/maven/checkstyle-config/2.3.0) (2018-08-09)
+[Full Changelog](https://github.com/joffrey-bion/checkstyle-config/compare/v2.2.0...v2.3.0)
+
+**Closed issues:**
+
+- Remove RuntimeException from IllegalCatch check [\#6](https://github.com/joffrey-bion/checkstyle-config/issues/6)
+
 ## [v2.2.0](https://bintray.com/joffrey-bion/maven/checkstyle-config/2.2.0) (2018-01-25)
 [Full Changelog](https://github.com/joffrey-bion/checkstyle-config/compare/v2.1.0...v2.2.0)
 
