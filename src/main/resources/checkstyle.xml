@@ -78,7 +78,9 @@
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
         <module name="FallThrough"/>
-        <module name="IllegalCatch"/>
+        <module name="IllegalCatch">
+            <property name="illegalClassNames" value="java.lang.Throwable, Error, Throwable, java.lang.Error, Exception, java.lang.Exception"/>
+        </module>
         <!-- Forbids labels, break down method instead -->
         <module name="IllegalToken"/>
         <module name="IllegalTokenText">
