@@ -17,6 +17,12 @@
     <module name="NewlineAtEndOfFile"/>
     <module name="UniqueProperties"/>
 
+    <!-- Wrapping and braces -->
+    <module name="LineLength">
+        <property name="max" value="121"/>
+        <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
+    </module>
+
     <module name="TreeWalker">
         <!-- Tabs and indents -->
         <property name="tabWidth" value="4"/>
@@ -25,7 +31,7 @@
             <property name="braceAdjustment" value="0"/>
             <property name="caseIndent" value="0"/>
             <property name="arrayInitIndent" value="8"/>
-            <property name="lineWrappingIndentation" value="8"/>
+            <property name="lineWrappingIndentation" value="4"/>
             <property name="forceStrictCondition" value="false"/>
         </module>
 
@@ -51,11 +57,6 @@
                       value="PACKAGE_DEF, IMPORT, CLASS_DEF, INTERFACE_DEF, ENUM_DEF, STATIC_INIT, INSTANCE_INIT, METHOD_DEF, CTOR_DEF"/>
         </module>
 
-        <!-- Wrapping and braces -->
-        <module name="LineLength">
-            <property name="max" value="121"/>
-            <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
-        </module>
         <module name="NoLineWrap"/>
         <module name="OperatorWrap"/>
 
@@ -175,11 +176,11 @@
         <module name="JavadocMethod">
             <property name="scope" value="public"/>
             <property name="allowedAnnotations" value="Override,FXML"/>
-            <property name="allowThrowsTagsForSubclasses" value="true"/>
             <property name="allowMissingParamTags" value="false"/>
             <property name="allowMissingReturnTag" value="true"/>
-            <property name="allowMissingThrowsTags" value="false"/>
-            <property name="allowMissingJavadoc" value="true"/>
+        </module>
+        <module name="MissingJavadocMethod">
+            <property name="allowMissingPropertyJavadoc" value="true"/>
             <!-- For JavaFX property getters -->
             <property name="ignoreMethodNamesRegex" value=".*Property"/>
         </module>
