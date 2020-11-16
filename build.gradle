@@ -1,5 +1,6 @@
 plugins {
     id "com.jfrog.bintray" version "1.7.3"
+    id("org.hildan.github.changelog") version "0.8.0"
 }
 
 apply plugin: 'java'
@@ -25,6 +26,13 @@ ext {
     githubRepoUrl = "https://github.com/$githubSlug"
     ossrhUserToken = getPropOrEnv('ossrhUserToken', 'OSSRH_USER_TOKEN')
     ossrhKey = getPropOrEnv('ossrhKey', 'OSSRH_KEY')
+}
+
+changelog {
+    futureVersionTag = "v${project.version}"
+    releaseUrlTemplate = "https://bintray.com/joffrey-bion/maven/checkstyle-config/%s"
+    releaseUrlTagTransform = { it.substring(1) }
+    customTagByIssueNumber = [1: "v1.1.0"]
 }
 
 def pomConfig = {
@@ -105,6 +113,3 @@ bintray {
     }
 }
 bintrayUpload.dependsOn(build)
-
-apply from: 'gradle/scripts/release.gradle'
-release.dependsOn(bintrayUpload)

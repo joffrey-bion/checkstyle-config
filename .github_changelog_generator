@@ -1,6 +1,0 @@
-user=joffrey-bion
-project=checkstyle-config
-bug-labels=bug
-enhancement-labels=enhancement
-exclude-labels=wontfix,duplicate,invalid
-release-url=https://bintray.com/joffrey-bion/maven/checkstyle-config/%s
