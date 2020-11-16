@@ -179,11 +179,7 @@
             <property name="allowMissingParamTags" value="false"/>
             <property name="allowMissingReturnTag" value="true"/>
         </module>
-        <module name="MissingJavadocMethod">
-            <property name="allowMissingPropertyJavadoc" value="true"/>
-            <!-- For JavaFX property getters -->
-            <property name="ignoreMethodNamesRegex" value=".*Property"/>
-        </module>
+
         <module name="NonEmptyAtclauseDescription"/>
 
         <!-- To enable the suppress warning filter -->
