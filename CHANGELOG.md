@@ -1,5 +1,13 @@
 # Change Log
 
+## [v2.4.0](https://bintray.com/joffrey-bion/maven/checkstyle-config/2.4.0) (2020-11-16)
+[Full Changelog](https://github.com/joffrey-bion/checkstyle-config/compare/v2.3.0...v2.4.0)
+
+**Closed issues:**
+
+- Upgrade to checkstyle 8.29 [\#7](https://github.com/joffrey-bion/checkstyle-config/issues/7)
+- Support Java 9 module\-info.java [\#8](https://github.com/joffrey-bion/checkstyle-config/issues/8)
+
 ## [v2.3.0](https://bintray.com/joffrey-bion/maven/checkstyle-config/2.3.0) (2018-08-09)
 [Full Changelog](https://github.com/joffrey-bion/checkstyle-config/compare/v2.2.0...v2.3.0)
 
