@@ -3,17 +3,15 @@ plugins {
     `maven-publish`
     signing
     id("io.github.gradle-nexus.publish-plugin") version "1.0.0"
-    id("org.hildan.github.changelog") version "0.8.0"
+    id("org.hildan.github.changelog") version "1.6.0"
 }
 
 group = "org.hildan.checkstyle"
 description = "A checkstyle configuration shared by multiple projects"
 
 changelog {
-    futureVersionTag = "v${project.version}"
-    releaseUrlTemplate = "https://bintray.com/joffrey-bion/maven/checkstyle-config/%s"
-    releaseUrlTagTransform = { it.substring(1) }
-    customTagByIssueNumber = mapOf(1 to "v1.1.0")
+    futureVersionTag = project.version.toString()
+    customTagByIssueNumber = mapOf(1 to "1.1.0")
 }
 
 val sourcesJar by tasks.creating(Jar::class) {
